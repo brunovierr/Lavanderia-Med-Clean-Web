@@ -1,0 +1,114 @@
+:root {
+  --bg: #eeefef;
+  --white: #ffffff;
+  --blue: rgba(100, 134, 184, 1);
+  --lightblue: rgba(159, 198, 255, 1); 
+  --border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.header a{
+  display: flex;
+  align-items: center;
+  gap: 2px; 
+  color: var(--blue);
+  text-decoration: none;
+}
+.icon {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+}
+.moldura
+{
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  max-width: 1450px;
+  height: 800px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 30px;
+  padding: 20px;
+  background: linear-gradient(
+    0deg,
+    hsla(216, 37%, 55%, 1) 6%,
+    hsla(202, 78%, 82%, 1) 67%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(216, 37%, 55%, 1) 6%,
+    hsla(202, 78%, 82%, 1) 67%
+  );
+
+  background: -webkit-linear-gradient(
+    280deg,
+    hsla(216, 37%, 55%, 1) 6%,
+    hsla(202, 78%, 82%, 1) 67%
+  );
+}
+
+.sup {
+  width: 90%; 
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 2rem 0;
+}
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 4px 20px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2 rgba(255, 255, 255, 1);
+}
+
+/*hover abaixo da navbar*/
+.navbar a:after {
+  position: absolute;
+  background-color: #ffffff;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.navbar a:hover {
+  color: #ffffff;
+}
+.navbar a:hover:after {
+  width: 100%;
+}
+
+html,
+body {
+  background: rgb(255, 255, 255);
+  min-height: 1000px;
+}

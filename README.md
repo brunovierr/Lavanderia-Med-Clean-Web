@@ -71,6 +71,7 @@ Além de entregar um site funcional para o cliente, este projeto tem como objeti
   <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="18"> Email: bruno.fv.08@gmail.com  
   <a href="https://www.linkedin.com/in/bruno-de-fran%C3%A7a-6987ab356/" target="_blank">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width="18" />
+     LinkedIn: Bruno de França
   </a> LinkedIn: Bruno de França
   <a href="https://github.com/brunovierr" target="_blank">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="18" />

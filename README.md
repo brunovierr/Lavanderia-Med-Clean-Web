@@ -1,1 +1,78 @@
-Projeto em andamento, front end e back para uma lavanderia.
+## Lavanderia Med Clean WebSite
+🧼 Med Clean — Website para Lavanderia
+
+Este é o meu primeiro projeto real desenvolvido para um cliente: a Lavanderia Med Clean.  
+O objetivo é criar um site moderno, responsivo e funcional para apresentar a empresa, seus serviços e diferenciais.
+
+🚧 O projeto ainda está em desenvolvimento — novas seções, animações, melhorias de layout e otimizações serão adicionadas ao longo do processo.
+
+
+### 🎨 Design & Prototipação
+
+O design foi totalmente prototipado no **Figma** antes do desenvolvimento.
+
+A identidade visual está sendo trabalhada para passar:
+
+- sensação de limpeza
+- confiabilidade
+- cuidado e qualidade no serviço
+
+
+### 🛠️ Tecnologias Utilizadas
+
+Este projeto foi desenvolvido 100% com tecnologias nativas da web, sem frameworks:
+
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30" /> HTML5  
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="30" /> CSS3  
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="30" /> JavaScript
+</p>
+
+
+#### ✨ Funcionalidades Planejadas
+
+- [ ] Layout completamente responsivo
+- [ ] Menu de navegação interativo
+- [ ] Página de serviços e preços
+- [ ] Animações suaves e microinterações
+- [ ] Integração com WhatsApp para atendimento
+- [ ] Possível integração futura com tabela de preços e serviços
+
+
+### 📸 Preview do Protótipo
+
+Protótipo desenvolvido no Figma antes da implementação.  
+<p> 
+  <img src="https://github.com/brunovierr/Lavanderia-Med-Clean-Web/blob/main/assets/images/figma%20prototipagem%20secao%201%20e%202.PNG" width="300">
+  <img src="https://github.com/brunovierr/Lavanderia-Med-Clean-Web/blob/main/assets/images/figma%20prototipagem%20secao%203%20e%204.PNG" width="300">
+  <img src="https://github.com/brunovierr/Lavanderia-Med-Clean-Web/blob/main/assets/images/figma%20prototipagem%20secao%205%20e%206.PNG" width="300">
+</p>
+
+#### 📝 Status do Projeto
+
+- [x] Protótipo criado no Figma
+- [x] Layout inicial desenvolvido
+- [x] Estrutura HTML e CSS base pronta
+- [x] Ajustes visuais e animações em progresso
+- 🚧 Integração com JS para eventos e navegação
+
+
+### 🎯 Objetivo do Projeto
+
+Além de entregar um site funcional para o cliente, este projeto tem como objetivo:
+
+- Aprimorar minhas habilidades em HTML, CSS e JavaScript puros  
+- Criar um fluxo de trabalho profissional com prototipação + desenvolvimento
+
+
+### 🤝 Contato
+
+<p>
+  <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="18"> Email: bruno.fv.08@gmail.com  
+  <a href="https://www.linkedin.com/in/bruno-de-fran%C3%A7a-6987ab356/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width="18" />
+  </a> LinkedIn: Bruno de França
+  <a href="https://github.com/brunovierr" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="18" />
+  </a> Portfólio/GitHub: https://github.com/brunovierr
+</p>

@@ -72,8 +72,9 @@ Além de entregar um site funcional para o cliente, este projeto tem como objeti
   <a href="https://www.linkedin.com/in/bruno-de-fran%C3%A7a-6987ab356/" target="_blank">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width="18" />
      LinkedIn: Bruno de França
-  </a> LinkedIn: Bruno de França
+  </a>
   <a href="https://github.com/brunovierr" target="_blank">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="18" />
-  </a> Portfólio/GitHub: https://github.com/brunovierr
+    https://github.com/brunovierr
+  </a>
 </p>

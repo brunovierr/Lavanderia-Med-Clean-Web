@@ -20,7 +20,7 @@ A identidade visual está sendo trabalhada para passar:
 
 ### 🛠️ Tecnologias Utilizadas
 
-Este projeto foi desenvolvido 100% com tecnologias nativas da web, sem frameworks:
+Este projeto foi desenvolvido com tecnologias:
 
 <p>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30" /> HTML5  

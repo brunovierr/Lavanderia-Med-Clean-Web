@@ -24,7 +24,6 @@ A identidade visual está sendo trabalhada para transmitir:
 Este projeto foi desenvolvido com tecnologias:
 =======
 Este projeto foi desenvolvido com as seguintes tecnologias:
->>>>>>> 373ab8a371ebb937a68ffca67350d37e76830c9f
 
 <p>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30" /> HTML5  

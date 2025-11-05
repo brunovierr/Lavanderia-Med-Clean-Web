@@ -19,12 +19,7 @@ A identidade visual está sendo trabalhada para transmitir:
 
 
 ### 🛠️ Tecnologias Utilizadas
-
-<<<<<<< HEAD
-Este projeto foi desenvolvido com tecnologias:
-=======
 Este projeto foi desenvolvido com as seguintes tecnologias:
-
 <p>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30" /> HTML5  
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="30" /> CSS3  

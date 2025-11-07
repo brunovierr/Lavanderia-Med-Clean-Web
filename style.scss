@@ -1,4 +1,4 @@
-
+// sass --watch style.scss:style.css
 :root {
   --bg: #eeefef;
   --white: #ffffff;
@@ -12,7 +12,7 @@
 
 $bg: var(--bg);
 $white: #fff;
-$black: var(--blue);
+$black: var(--lightblue);
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
@@ -86,8 +86,6 @@ $black: var(--blue);
     hsla(216, 37%, 55%, 1) 6%,
     hsla(202, 78%, 82%, 1) 67%
   );
-
-
 }
 
 .header_main{
@@ -209,6 +207,7 @@ align-items: center;
 
 .btn-fale button:hover {
   border: 2px double #9fc6ff;
+  
 }
 
 .btn-fale img {
@@ -224,7 +223,7 @@ align-items: center;
   align-items: flex-start;
   flex-direction: column;
   margin-left: 80px;
-  margin-top:60px;
+  margin-top: 60px;
   color: var(--black);
   font-size: 20px;
 }
@@ -243,7 +242,7 @@ align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 50px;
+  margin: 55px 70px ;
 }
 
 .services{
@@ -277,7 +276,6 @@ width: 90px;
   justify-content: center;
 }
 
-
 button {
   position: relative;
   display: inline-block;
@@ -305,7 +303,6 @@ button {
       border-radius: 1.625rem;
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-
         position: absolute;
         top: 0;
         bottom: 0;
@@ -363,11 +360,109 @@ button {
   }
 }
 
+.line{
+  margin-top: 70px;
+  position: relative;
+  left: 10%;
+  content: "";
+  width: 80%;
+  height: 0px;
+  border: 2px solid var(--lightblue);
+  border-radius: 8px;
+}
 
+.differences{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 60px;
+  color: var(--black);
+  font-size: 20px;
+}
+.differences-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.differences h4{
+  color: rgba(30, 30, 30, 0.44);
+  font-weight: 500;
+}
+
+.differences h1{
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.differences p {
+  font-size: 16px;
+  margin-top: 15px;
+  width: 550px;
+}
+
+.differences-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.column-left{
+display: flex;
+  flex-direction: column;
+  position: relative;
+align-items: end;
+  text-align: right;
+}
+
+.item {
+  display: flex;
+  gap: 15px;
+  text-align: left;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.icon {
+  width: 40px;
+  color: var(--lightblue);
+}
+
+.image-differences {
+  flex: 1;  
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-differences img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 12px 12px 0 var(--lightblue);
+}
 
 
 html,
 body {
   background: rgb(255, 255, 255);
-  min-height: 1000px;
+  min-height: 1500px;
 }

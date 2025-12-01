@@ -163,7 +163,7 @@
 }
 
 .stars {
-  margin-top: 110px;
+  margin-top: 20px;
 }
 
 .stars img {
@@ -356,7 +356,8 @@ button:hover .button-text {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px; /* Espaço extra embaixo */
   color: var(--black);
   font-size: 20px;
 }
@@ -367,78 +368,152 @@ button:hover .button-text {
   align-items: center;
 }
 
-.differences h4 {
+.differences-header h4 {
   color: rgba(30, 30, 30, 0.44);
   font-weight: 500;
 }
 
-.differences h1 {
+.differences-header h1 {
   font-weight: 600;
   line-height: 30px;
 }
 
-.differences p {
+.differences-header p {
   font-size: 16px;
   margin-top: 15px;
   width: 550px;
 }
 
+/* Layout do Conteúdo (3 Colunas) */
 .differences-content {
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  gap: 40px;
-  flex-wrap: wrap;
+  justify-content: center; /* Centraliza tudo */
+  align-items: center; /* Alinha itens verticalmente ao centro da imagem */
+  margin-top: 50px;
+  gap: 20px; /* Espaço entre as colunas e a imagem */
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.column {
+/* Colunas Laterais (Esquerda e Direita) */
+.column-left, .column-right {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  flex: 1;
-  min-width: 260px;
+  gap: 40px; /* Espaço entre cada item (delivery, qualidade, etc) */
+  flex: 1; /* Ocupam o mesmo espaço */
+  max-width: 350px; /* Limita a largura para o texto não esticar demais */
 }
 
+/* Coluna Esquerda - Alinhamento */
 .column-left {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: end;
-  text-align: right;
+  align-items: flex-end; /* Empurra o conteúdo para a direita (perto da imagem) */
+  text-align: right; /* Texto alinhado à direita */
 }
 
+/* Coluna Direita - Alinhamento */
+.column-right {
+  align-items: flex-start; /* Empurra o conteúdo para a esquerda (perto da imagem) */
+  text-align: left; /* Texto alinhado à esquerda */
+}
+
+/* Estilo Individual de cada Item */
 .item {
   display: flex;
+  align-items: center; /* Centraliza ícone com o texto verticalmente */
   gap: 15px;
-  text-align: left;
+  width: 100%;
 }
 
+/* Ajuste específico para inverter a ordem na coluna da esquerda
+   para ficar: Texto -> Ícone -> [IMAGEM] */
+.column-left .item {
+  flex-direction: row-reverse; /* Inverte a ordem para o ícone ficar perto da imagem */
+}
+
+/* Tipografia dos Itens */
 .item h3 {
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 5px;
 }
 
 .item p {
+  font-size: 14px;
   color: #666;
-  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
 }
 
+/* Ícones */
 .icon {
-  width: 40px;
-  color: var(--lightblue);
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0; /* Impede o ícone de amassar */
 }
 
+/* Coluna Central (Imagem) */
 .image-differences {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  flex: 0 0 auto; /* Não deixa a imagem encolher nem esticar */
   position: relative;
+  margin: 0 20px;
+  z-index: 1;
 }
 
 .image-differences img {
+  width: 350px; /* Largura fixa para a imagem central */
+  height: 400px; /* Altura fixa ou auto */
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  /* Removemos o box-shadow antigo para fazer o efeito sólido abaixo */
+}
+
+/* O efeito do "cartão azul" atrás da imagem */
+.image-differences::before {
+  content: "";
+  position: absolute;
+  top: 15px;    /* Deslocamento para baixo */
+  left: 15px;   /* Deslocamento para direita */
   width: 100%;
-  border-radius: 16px;
-  box-shadow: 12px 12px 0 var(--lightblue);
+  height: 100%;
+  background-color: var(--lightblue); /* Cor do fundo deslocado */
+  border-radius: 20px;
+  z-index: -1; /* Fica atrás da imagem */
+}
+
+/* Responsividade: Celular e Tablets */
+@media (max-width: 1024px) {
+  .differences-content {
+    flex-direction: column; /* Empilha tudo verticalmente */
+    gap: 50px;
+  }
+  
+  .column-left, .column-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .column-left .item {
+    flex-direction: column; /* Ícone em cima do texto */
+  }
+  
+  .column-right .item {
+    flex-direction: column;
+  }
+  
+  .item {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .image-differences {
+    order: -1; /* Joga a imagem para o topo no celular, se preferir */
+    margin-bottom: 20px;
+  }
 }
 
 html,
@@ -642,6 +717,38 @@ body {
   margin-bottom: 80px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-pdf-link {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn-pdf {
+  background-color: var(--lightblue);
+  color: var(--white);
+  font-weight: 500;
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+  gap: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-pdf:hover {
+  background-color: #4a6fa5; 
+}
+
+.btn-pdf img {
+  width: 50px;
+  filter: brightness(0) invert(1); 
 }
 
 .pricing-table {
@@ -989,6 +1096,7 @@ body {
 .testimonial-card {
   background: #ffffff;
   padding: 30px;
+  padding-top: 0;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   border-left: 4px solid var(--lightblue);
@@ -1306,6 +1414,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  color: var(--black);
 }
 
 .home-testimonials-header {
@@ -1338,7 +1447,7 @@ body {
 }
 
 .home-journey-header h4 {
-  color: rgba(30, 30, 30, 0.44);
+  color: var(--black);
   font-weight: 500;
   font-size: 20px;
 }
@@ -1347,6 +1456,7 @@ body {
   font-weight: 600;
   line-height: 30px;
   font-size: 36px;
+  color: var(--black);
 }
 
 .journey-content {
@@ -1364,7 +1474,7 @@ body {
 }
 
 .stat-item {
-  background: #f9f9f9;
+  background: var(--lightblue) ;
   padding: 30px;
   border-radius: 12px;
   text-align: center;
@@ -1380,7 +1490,7 @@ body {
 
 .stat-label {
   font-size: 14px;
-  color: #ffffff;
+  color: white;
 }
 
 .journey-image img {
@@ -1411,6 +1521,7 @@ body {
   font-weight: 600;
   line-height: 30px;
   font-size: 36px;
+  color: var(--black);
 }
 
 .location-content {
